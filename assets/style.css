@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --bg-content:#040924;
+    --tt-heading:#0c3440;
+    --bg-input:#dce2e9;
+    --tt-label:#00453a;
+    --tt-placeholder: rgba(73,80,87,0.5);
+    --bg-border:rgba(73,80,87,0.3);
+    --bg-button:#02799d;
+    --bg-button-hvr:#016280;
+    --bg-outline:#02799d;
+    --bg-modal:rgba(0,0,0,.7);
+    --bg-error:#f03e3e;
+}
+body{
+    font-size: 1.6rem;
+    font-family:'Roboto', sans-serif;;
+}
+.content{
+    background-color: var(--bg-content);
+
+}
+.content,.modal-container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center; /*alinha ao centro vertical e horizontalmente*/
+}
+.display{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    gap: 3.2rem;
+}
+.input-container{
+    gap: 1.6rem;
+}
+.card{
+    background-color: #fff;
+    max-width: 42rem;
+    gap: 3.2rem;
+    padding: 6.4rem;
+    border-radius: .4rem;    
+}
+.card h1{
+    color: var(--tt-heading);
+}
+.input-wrapper{
+    gap: .5rem;
+}
+.input-wrapper label{
+    color: var(--tt-label);
+    font-size: 1.4rem;
+}
+.input-wrapper input{
+    background-color: var(--bg-input);
+    border: 1px solid var(--bg-border);
+}
+input, button{
+    border-radius: .4rem;
+    padding: 1.6rem;
+    width: 30rem;
+}
+button{
+    background-color: var(--bg-button);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+button:hover{
+    transition: background-color 1s;
+    background-color: var(--bg-button-hvr);
+}
+input:focus{
+    outline: 1px solid var(--bg-outline);
+}
+.modal-container{
+    background-color: var(--bg-modal) ;
+    position: absolute;
+}
+.modal-wrapper{
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.8rem;
+    cursor: pointer;
+}
+.error{
+    background-color:var(--bg-error) ;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    padding: .8rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .08rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="content">
+        <main class="card display">
+            <h1>Cálculo de IMC</h1>
+            <form class="display">
+                <div class="input-container display">
+                    <div class="input-wrapper display">
+                        <label for="">Peso(kg)</label>
+                        <input type="text" id="imc-weight" placeholder="54">
+                    </div>
+                    
+                    <div class="input-wrapper display">
+                        <label for="">Altura(cm)</label>
+                        <input type="text" id="imc-height" placeholder="163">
+                    </div>
+                </div>
+
+                <button type="submit">
+                    Calcular IMC
+                </button>
+            </form>
+        </main>
+        <div class="modal-container center hide">
+            <div class="card modal-wrapper">
+                <h2>Seu IMC é de 28</h2>
+                <div class="close">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.8024 1.59033L9.27777 7.115L14.8024 12.6397L13.4097 14.0324L7.885 8.50777L2.36033 14.0324L0.967559 12.6397L6.49223 7.115L0.967559 1.59033L2.36033 0.197558L7.885 5.72223L13.4097 0.197558L14.8024 1.59033Z" fill="#9E9E9E"/>
+                    </svg>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    <div class="error hide">
+        Digite somente números
+    </div>
+    <script src="./assets/js/main.js" type="module"></script>
+</body>
+</html>
